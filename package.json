@@ -1,0 +1,7 @@
+{
+  "name": "libless-js-talk",
+  "version": "1.0.0",
+  "description": "A talk about JavaScript without any dependencies",
+  "author": "Marius Büscher <marius.buescher@denkwerk.com>",
+  "license": "MIT"
+}

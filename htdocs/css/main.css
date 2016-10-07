@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.site-wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.legal {
+    font-size: 0.8em;
+    color: #1FCB82;
+}
+
+.legal a {
+    color: #1FCB82;
+    text-decoration: none;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
