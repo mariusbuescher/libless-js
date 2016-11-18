@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/carousel-navigation.js"></script>
 </head>
 <body>
 
@@ -37,6 +38,15 @@
         </div>
 </div>
 </main>
+
+<script>
+    var carousel = new Carousel(document.querySelector('.carousel'), {
+        loop: true,
+        plugins: [
+            (new CarouselNavigation())
+        ]
+    });
+</script>
 
 </body>
 </html>
