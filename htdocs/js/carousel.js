@@ -77,15 +77,16 @@
      * @param {Number} index
      */
     Carousel.prototype.goTo = function(index) {
+        var position = null;
 
         // check for boundaries
         if (index >= 0 && index < this.items.length && index !== this.currentIndex) {
-            var position = (this.settings.loop === true) ? index + 1 : index;
+            position = (this.settings.loop === true) ? index + 1 : index;
 
             this.stage.style.transform = (position === 0) ? 'translateX(0)' : 'translateX(-' + position * 100 + '%)';
             this.currentIndex = index;
         } else if (this.settings.loop === true && (index === -1 || index === this.items.length)) {
-            var position = (index === -1) ? 0 : this.items.length + 1;
+            position = (index === -1) ? 0 : this.items.length + 1;
 
             var transitionendCb = function (evt) {
                 if (evt.propertyName === 'transform' && evt.target === this.stage) {
